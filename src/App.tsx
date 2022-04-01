@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import MiniCodeComplexIntput from "./components/MiniCodeComplexIntput";
+import MiniCodeInput from "./components/MiniCodeInput";
+import MiniCodeStateCallback from "./components/MiniCodeStateCallback";
+import MiniCodeUseEffectMount from "./components/MiniCodeUseEffectMount";
+import MiniCodeUseEffectUnMount from "./components/MiniCodeUseEffectUnMount";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Ejemplos de useState</h2>
+      <MiniCodeStateCallback />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+
+      <MiniCodeComplexIntput />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+
+      <MiniCodeInput />
+      <h2>Ejemplos de useEffect</h2>
+
+      <MiniCodeUseEffectMount />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <MiniCodeUseEffectUnMount />
+
+
+
     </div>
   );
-}
+};
 
 export default App;
